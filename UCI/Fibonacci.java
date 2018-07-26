@@ -32,12 +32,12 @@ public class Fibonacci {
 
 
     // Method using recursive powering
-    // [1 1] ^ n     {F(n+1) F(n)  ]
+    // [1 1] ^ n     [F(n+1) F(n)  ]
     // [1 0]      =  [F(n)   f(n-1)]
     // Where F(n) is n-th Fibonacci number
     // need 2x2 matrix multiplication helper method
     // time: O(n), space: O(1)
-    public static void matmult(int[][] m1, int[][] m2) {
+    private static void matmult(int[][] m1, int[][] m2) {
         int x = m1[0][0]*m2[0][0] + m1[0][1]*m2[1][0];
         int y = m1[0][0]*m2[0][1] + m1[0][1]*m2[1][1];
         int z = m1[1][0]*m2[0][0] + m1[1][1]*m2[1][0];
@@ -68,7 +68,7 @@ public class Fibonacci {
     }
 
     // recursive helper method for fast exponentiation
-    public static void matpow(int n, int[][] M) {
+    private static void matpow(int n, int[][] M) {
         if (n > 1) {
             matpow(n/2, M);
             matmult(M, M);
