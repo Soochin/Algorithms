@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class KaratsubaMult {
     public static long karatsubaMult(long x, long y) {
         if (x < 10 || y < 10)
@@ -27,5 +25,6 @@ public class KaratsubaMult {
 
     public static void main(String[] args) {
         System.out.println("1234*5678 = " + karatsubaMult(1234, 5678));
+        System.out.println("5123*12313 = " + karatsubaMult(5123, 12313));
     }
 }
