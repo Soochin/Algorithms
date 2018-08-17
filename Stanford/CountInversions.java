@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CountInversions {
@@ -91,7 +92,7 @@ public class CountInversions {
             arr[i] = in.nextInt();
         }
 
-        // int[] testArr = {1, 20, 6, 4, 5};
+        int[] testArr = {1, 20, 6, 4, 5};
         // System.out.println("Number of Inversions in " + Arrays.toString(testArr) + " is: " + bruteForceCount(testArr, testArr.length));
         // System.out.println("Number of Inversions are " + bruteForceCount(arr, arr.length));
         System.out.println("Number of Inversions are " + mergeSortAndCount(arr, arr.length));
