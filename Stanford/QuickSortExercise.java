@@ -33,6 +33,7 @@ public class QuickSortExercise {
     // 0 = 1st element of (sub)array
     // 1 = last element of (sub)array
     // 2 = median of three
+    // 3 = random
     public static long countQuickSortComparisions(int[] arr, int left, int right, int pivotFlag) {
         long comparisons = right - left;
         int pivotIndex = partitionAndCount(arr, left, right, pivotFlag);
